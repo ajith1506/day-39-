@@ -9,7 +9,7 @@ const PORT = 3000;
 
 // Connect to MongoDB
 mongoose
-  .connect("mongodb://localhost:27017/guvi-fsd")
+  .connect("mongodb://0.0.0.0:27017/guvi-fsd")
   .then(() => console.log("mongoDB is connected"))
   .catch((err) => console.error("mongo db is not connect", err));
 
