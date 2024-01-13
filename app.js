@@ -8,7 +8,9 @@ const PORT = 3000;
 
 // Connect to MongoDB
 mongoose
-  .connect("mongodb://localhost:27017/zen")
+  .connect(
+    "mongodb+srv://ajithkumararun1111:Q7Ls8xZpxl7tT4hS@task-39.nmneued.mongodb.net/zen"
+  )
   .then(() => console.log("mongoDB is connected"))
   .catch((err) => console.error("mongo db is not connect", err));
 
